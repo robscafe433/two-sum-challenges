@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3rd Sandbox</title>
+  </head>
+  <body>
+    <script>
+      let compare = function (nums, target) {
+        let map = new Map();
+        for (let i = 0; i < nums.length; i++) {
+          let num1 = nums[i];
+          let num2 = target - num1;
+
+          if (map.has(num2)) {
+            console.log("There is a match");
+            return [map.get(num2), i];
+          }
+          map.set(num1, i);
+          console.log(map);
+          console.log(target);
+        }
+      };
+      console.log(compare([2, 3, 1, 2, 5, 7], 12));
+    </script>
+  </body>
+</html>
