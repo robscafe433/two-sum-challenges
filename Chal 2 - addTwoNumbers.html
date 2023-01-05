@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Two Numbers - personal solution</title>
+  </head>
+  <body>
+    <script>
+      let addTwoNums = function (li1, li2) {
+        let map = new Map();
+        for (let i = 0; i < li1.length; i++) {
+          map.set(li1[i] + li2[i]) 
+        //   console.log(answer);
+        //   map.set(i, answer);
+          console.log([map.get(i)]);
+        }
+      };
+
+      console.log(addTwoNums([1, 2, 4, 3, 5], [5, 3, 4, 2, 1]));
+    </script>
+  </body>
+</html>
